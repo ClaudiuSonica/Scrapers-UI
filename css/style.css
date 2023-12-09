@@ -32,6 +32,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input,
@@ -42,6 +43,9 @@ button {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+}
+button {
+  cursor: pointer;
 }
 
 /**********
@@ -204,6 +208,7 @@ hr {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.1px;
+  cursor: pointer;
 }
 
 .main--companies__search-filters--filter {
@@ -214,4 +219,116 @@ hr {
   padding: 10px;
   border-radius: 28px;
   background: #d8cdbe;
+}
+
+.main--companies__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 37px;
+  padding-inline: 23px;
+  flex-wrap: wrap;
+}
+
+.main--companies__list--item {
+  background: #eeeeee;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: inset(0px 0px 10px 10px) rgba(0, 0, 0, 0.25);
+}
+
+.main--companies__list--item-header {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  align-self: stretch;
+}
+
+.main--companies__list--item-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  height: 132px;
+}
+
+.main--companies__list--item-logo img {
+  width: 100%;
+}
+
+.main--companies__list--item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 20px;
+  padding-bottom: 32px;
+}
+
+.main--companies__list--item-info--title {
+  color: #1d1b20;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+.main--companies__list--item-info--text {
+  color: #49454f;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.main--companies__list--item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 16px;
+}
+
+.main--companies__list--item-buttons .btn-full {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #db7900;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 10px 24px;
+}
+
+.main--companies__list--item-buttons .btn-empty {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #db7900;
+  color: #db7900;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 10px 24px;
 }
