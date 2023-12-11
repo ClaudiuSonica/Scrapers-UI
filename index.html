@@ -23,19 +23,19 @@
           id="primary-navigation"
           data-visible="false">
           <li class="nav-list__item">
-            <a href="#" class="nav-list__itme--link">Joburi</a>
+            <a href="#" class="nav-list__item--link">Joburi</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__itme--link">Companii</a>
+            <a href="#" class="nav-list__item--link">Companii</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__itme--link">Cautare</a>
+            <a href="#" class="nav-list__item--link">Cautare</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__itme--link">Despre</a>
+            <a href="#" class="nav-list__item--link">Despre</a>
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__itme--link">Contact</a>
+            <a href="#" class="nav-list__item--link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -74,10 +74,29 @@
           </select>
         </div>
         <div class="main--hero__buttons">
-          <button type="button">
+          <button type="button" id="openModalBtn">
             Filtreaza
             <span><img src="./images/filter.svg" alt="filter icon" /></span>
           </button>
+          <div class="modal" id="filterModal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="main--filters_modal">
+                <select name="judetModal" id="judetModal">
+                  <option value="judet">Judet</option>
+                </select>
+                <select name="orasModal" id="orasModal">
+                  <option value="oras">Oras</option>
+                </select>
+                <select name="industrieModal" id="industrieModal">
+                  <option value="industrie">Industrie</option>
+                </select>
+                <select name="angajatiModal" id="angajatiModal">
+                  <option value="angajati">Numar angajati</option>
+                </select>
+              </div>
+            </div>
+          </div>
           <button type="button">
             Sorteaza
             <span><img src="./images/arrow.svg" alt="arrow icon" /></span>

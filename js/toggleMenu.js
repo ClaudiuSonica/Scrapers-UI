@@ -19,3 +19,19 @@ tags.forEach((tag) => {
     tag.remove();
   });
 });
+
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalSpan = document.getElementsByClassName('close')[0];
+const modal = document.getElementById('filterModal');
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+openModalBtn.addEventListener('click', openModal);
+closeModalSpan.addEventListener('click', closeModal);
+
